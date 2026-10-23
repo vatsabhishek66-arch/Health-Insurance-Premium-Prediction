@@ -90,4 +90,4 @@ Streamlit will display a local URL in the terminal. Open that URL in your browse
 
 ## License
 
-No license has been specified yet. Add a license if you intend to grant others permission to reuse or modify this project.
+No license has been specified yet.
