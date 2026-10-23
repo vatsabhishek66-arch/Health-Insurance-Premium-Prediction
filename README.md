@@ -88,6 +88,10 @@ Streamlit will display a local URL in the terminal. Open that URL in your browse
 - The saved model and scaler files must be available in the expected `artifacts/` directory.
 - This application is intended for educational and demonstration purposes, not as a substitute for professional insurance advice.
 
-## License
+## Application Preview
 
 No license has been specified yet.
+
+## Application Preview
+
+![Health Insurance Premium Prediction UI](assets/health-insurance-app.png)
