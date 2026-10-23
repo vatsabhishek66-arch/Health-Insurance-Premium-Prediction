@@ -1,0 +1,28 @@
+﻿# Python virtual environments
+.venv/
+**/.venv/
+
+# IDE settings
+.idea/
+**/.idea/
+
+# Python cache files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Duplicate local model artifacts
+app/artifacts/
