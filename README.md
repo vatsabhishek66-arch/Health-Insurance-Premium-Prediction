@@ -1,97 +1,139 @@
-﻿# Health Insurance Premium Prediction
+🏥 Health Insurance Premium Prediction
 
-A machine learning regression project that predicts health insurance costs based on user-provided demographic, financial, lifestyle, and medical-history information. The project includes a Streamlit web application for interactive predictions.
+A Machine Learning web application that predicts estimated health insurance premiums based on user information and health-related attributes.
 
-## Features
+The application uses trained regression models and a Streamlit interface to provide predictions interactively.
 
-- Interactive web interface built with Streamlit
-- Predicts estimated health insurance costs using trained machine learning models
-- Uses separate models for younger users (age 25 or below) and other users
-- Preprocesses categorical and numerical inputs
-- Applies saved scalers to selected features
-- Includes trained models and preprocessing artifacts
+📸 Application Preview
 
-## Tech Stack
 
-- Python
-- Pandas
-- Scikit-learn
-- Joblib
-- Streamlit
 
-## Project Structure
+✨ Features
 
-```text
-Health-Premium-Prediction/
+Predict estimated health insurance premiums from user inputs.
+
+Use separate trained models for different age groups.
+
+Apply saved preprocessing scalers before generating predictions.
+
+Interactive web interface built with Streamlit.
+
+Modular prediction logic for easier maintenance.
+
+🛠️ Tech Stack
+
+Technology
+
+Purpose
+
+Python
+
+Core programming language
+
+Pandas
+
+Data handling
+
+Scikit-learn
+
+Machine learning and preprocessing
+
+Joblib
+
+Loading saved models and scalers
+
+Streamlit
+
+Interactive web application
+
+📂 Project Structure
+
+Health-Insurance-Premium-Prediction/
+│
 ├── app/
 │   ├── main.py
 │   └── prediction_helper.py
+│
 ├── artifacts/
 │   ├── best_model_young.joblib
 │   ├── best_model_rest.joblib
 │   ├── scaler_with_cols_young.joblib
 │   └── scaler_with_cols_rest.joblib
+│
+├── assets/
+│   └── health-insurance-app.png
+│
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-```
 
-## Installation
+⚙️ Installation and Setup
 
-### 1. Clone the repository
+1. Clone the repository
 
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
-```
+git clone https://github.com/vatsabhishek66-arch/Health-Insurance-Premium-Prediction.git
 
-Replace the repository URL with your GitHub repository URL.
+2. Navigate to the project directory
 
-### 2. Create and activate a virtual environment
+cd Health-Insurance-Premium-Prediction
 
-Windows PowerShell:
+3. Create and activate a virtual environment (optional but recommended)
 
-```powershell
+Windows PowerShell
+
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-```
 
-### 3. Install dependencies
+4. Install dependencies
 
-```bash
 python -m pip install -r requirements.txt
-```
 
-## Run the Application
+5. Run the application
 
-From the project root, run:
+Run this command from the project root directory:
 
-```bash
 python -m streamlit run app/main.py
-```
 
-Streamlit will display a local URL in the terminal. Open that URL in your browser to use the application.
+Streamlit will display a local URL in your terminal. Open that URL in your browser.
 
-## How It Works
+🧠 How It Works
 
-1. The user enters demographic, financial, lifestyle, and medical-history details.
-2. The application converts the inputs into the feature format expected by the trained models.
-3. A normalized medical-risk score is calculated from the selected medical history.
-4. The saved scaler transforms the required numerical features.
-5. The application selects the model based on the user's age.
-6. The model generates a predicted health insurance cost, which is displayed in the interface.
+The user enters the required information through the Streamlit interface.
 
-## Important Notes
+The application processes the input features using the prediction helper.
 
-- The prediction is an estimate from a machine learning model, not an official insurance quote.
-- Prediction quality depends on the training data, feature engineering, and model performance.
-- The saved model and scaler files must be available in the expected `artifacts/` directory.
-- This application is intended for educational and demonstration purposes, not as a substitute for professional insurance advice.
+The appropriate saved model and corresponding scaler are selected based on the application's age-group logic.
 
-## Application Preview
+The input features are transformed using the saved preprocessing artifacts.
 
-No license has been specified yet.
+The trained regression model generates an estimated insurance premium.
 
-## Application Preview
+The application displays the prediction to the user.
 
-![Health Insurance Premium Prediction UI](assets/health-insurance-app.png)
+📦 Model Artifacts
+
+The artifacts/ directory contains the trained models and preprocessing scalers used by the application.
+
+best_model_young.joblib — trained model for the younger age group.
+
+best_model_rest.joblib — trained model for the remaining age group.
+
+scaler_with_cols_young.joblib — preprocessing scaler for the younger age group.
+
+scaler_with_cols_rest.joblib — preprocessing scaler for the remaining age group.
+
+⚠️ Limitations
+
+Predictions depend on the data and patterns learned during training.
+
+Estimated premiums may differ from actual insurer quotations.
+
+The application is intended for educational and demonstration purposes, not as a substitute for an official insurance quote.
+
+👨‍💻 Author
+
+Abhishek Vats
+
+GitHub: @vatsabhishek66-arch
+
+Built as a machine learning project to demonstrate model deployment and interactive prediction using Streamlit.
