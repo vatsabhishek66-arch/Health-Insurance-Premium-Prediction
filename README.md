@@ -44,6 +44,12 @@ Health-Insurance-Premium-Prediction/
 ├── assets/
 │   └── health-insurance-app.png
 │
+├── notebooks/
+│   ├── README.md
+│   ├── 01_overall_model_analysis.ipynb
+│   ├── 02_young_age_group_model.ipynb
+│   └── 03_older_age_group_model.ipynb
+│
 ├── .gitignore
 ├── requirements.txt
 └── README.md
