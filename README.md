@@ -97,6 +97,15 @@ Streamlit will display a local URL in your terminal. Open that URL in your brows
 5. The trained regression model generates an estimated insurance premium.
 6. The application displays the prediction to the user.
 
+## 🧠 Model Selection
+
+The application uses separate regression models for different age groups:
+
+- **Age 25 or younger:** Linear Regression, incorporating the genetic-risk feature used in the younger-group model.
+- **Age above 25:** XGBoost regression model, trained and tuned for the older age group.
+
+The application selects the appropriate trained model and its corresponding preprocessing artifacts based on the user's age.
+
 ## 📦 Model Artifacts
 
 The `artifacts/` directory contains the trained models and preprocessing scalers used by the application.
