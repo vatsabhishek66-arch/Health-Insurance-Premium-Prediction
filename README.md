@@ -8,6 +8,16 @@ The application uses trained regression models and a Streamlit interface to prov
 
 ![Health Insurance Premium Prediction UI](assets/health-insurance-app.png)
 
+## 📊 Dataset Overview
+
+The project uses an insurance dataset containing approximately 50,000 records, provided as Excel files as part of a machine learning course.
+
+The dataset contains information about individuals and health-related attributes used to predict health insurance premiums.
+
+During experimentation, the original dataset was analyzed to identify differences in prediction performance across age groups. This led to the development of separate models for younger and older individuals.
+
+**Note:** The original dataset is not included in this repository. The training notebooks document the experimentation and model-development process.
+
 ## ✨ Features
 
 - Predict estimated health insurance premiums from user inputs.
